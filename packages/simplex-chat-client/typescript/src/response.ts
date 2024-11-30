@@ -791,17 +791,17 @@ interface IChatInfo {
   type: ChatInfoType
 }
 
-interface CInfoDirect extends IChatInfo {
+export interface CInfoDirect extends IChatInfo {
   type: ChatInfoType.Direct
   contact: Contact
 }
 
-interface CInfoGroup extends IChatInfo {
+export interface CInfoGroup extends IChatInfo {
   type: ChatInfoType.Group
   groupInfo: GroupInfo
 }
 
-interface CInfoContactRequest extends IChatInfo {
+export interface CInfoContactRequest extends IChatInfo {
   type: ChatInfoType.ContactRequest
   contactRequest: UserContactRequest
 }
